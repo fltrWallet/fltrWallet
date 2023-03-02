@@ -25,7 +25,7 @@ let package = Package(
                                      package: "swift-nio"),
                             .product(name: "NIOTransportServices",
                                      package: "swift-nio-transport-services"), ],
-            sources: ["fltrWallet"],
+            path: "Sources/fltrWallet",
             resources: [ .process("Resources"), ]),
     ]
 )
