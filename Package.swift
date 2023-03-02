@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "fltrWallet",
+    name: "fltrWallet-lib",
     platforms: [ .iOS(.v14), ],
     products: [
         .library(
-            name: "fltrWallet",
-            targets: ["fltrWallet"]),
+            name: "fltrWallet-lib",
+            targets: ["fltrWallet-lib"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-nio.git", branch: "main"),
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "fltrWallet",
+            name: "fltrWallet-lib",
             dependencies: [ "fltrBtc",
                             "fltrUI",
                             .product(name: "NIO",
