@@ -62,14 +62,12 @@ public struct SyncView: View {
             HStack(alignment: .center) {
                 Spacer()
                 
-                if let info = info {
-                    Text(info)
-                        .font(.system(size: 15, weight: .ultraLight, design: .rounded))
-                        .lineLimit(1)
-                        .allowsTightening(true)
-                        .foregroundColor(Color("newGray"))
-                        .offset(x: 0, y: 20 + 1 * cheight )
-                }
+                Text(info)
+                    .font(.system(size: 15, weight: .ultraLight, design: .rounded))
+                    .lineLimit(1)
+                    .allowsTightening(true)
+                    .foregroundColor(Color("newGray"))
+                    .offset(x: 0, y: 20 + 1 * cheight )
                 
                 Spacer()
             }
